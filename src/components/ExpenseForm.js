@@ -33,7 +33,7 @@ export default class ExpenseForm extends React.Component {
       this.setState(() => ({ createdAt }));
     }
   };
-  onFocusChange = focused => {
+  onFocusChange = ({focused}) => {
     this.setState(() => ({ calendarFocused: focused }));
   };
   onSubmit = e => {
@@ -74,7 +74,7 @@ export default class ExpenseForm extends React.Component {
           <SingleDatePicker
             date={this.state.createdAt}
             onDateChange={this.onDateChange}
-            focused={!!this.state.calendarFocused}
+            focused={this.state.calendarFocused}
             onFocusChange={this.onFocusChange}
             numberOfMonths={1}
             isOutsideRange={() => false}
