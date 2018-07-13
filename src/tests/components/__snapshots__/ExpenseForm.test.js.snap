@@ -320,12 +320,12 @@ exports[`should render error for invalid form submission 1`] = `
 
 exports[`should render error for invalid form submission 2`] = `
 <div>
-  <p>
-    Please provide a description and an amount.
-  </p>
   <form
     onSubmit={[Function]}
   >
+    <p>
+      Please provide a description and an amount.
+    </p>
     <input
       autoFocus={true}
       onChange={[Function]}
